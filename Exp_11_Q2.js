@@ -8,7 +8,7 @@ fs.readFile('randtext.txt', function(err, data) {
 });
 
 try {
-    const syncData = fs.readFileSync('randtext.txt'); // No 'utf8' encoding
+    const syncData = fs.readFileSync('randtext.txt'); 
     console.log('Synchronous Read: ' + syncData.toString());
 } catch (err) {
     console.error(err);
